@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>地址选择</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/daiban.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<style type="text/css">
+	
+	ul.conditionD div{
+		width: 40%;
+		font-size: 12px;
+	}
+	.daiban ul.conditionD li a{
+		color: #000;
+		position: relative;
+		width: 92%;
+    	padding: 0px;
+	    background: none;
+	}
+	.daiban ul{
+		margin-top: 26px;
+		float: left;
+		background: #f6f6f6;
+		padding-bottom: 58px;
+	}
+	.daiban ul.conditionD>div{
+		color: #9d9d9d;
+	}
+	.daiban ul.conditionD>div{
+		width: 100%;
+		border-top: 1px solid #f6f6f6;
+		overflow: hidden;
+		margin-top: 2px;
+		background: #fff;
+		margin-bottom: 10px;
+	}
+	.daiban ul.conditionD>div>div>span{
+		float: left;
+	}
+	.daiban ul.conditionD>div>div>span.pitchBut{
+		width: 14px;
+	    height: 14px;
+	    margin-top: 13px;
+	    margin-right: 16%;
+	    display: inline-block;
+	    background: url("img/xuanzhong2.jpg") 0 0 no-repeat;
+		background-size: 100% 100%;
+	}
+	.daiban ul.conditionD>div.hong>div>span.pitchBut{
+	    background: url("img/xuanzhong3.jpg") 0 0 no-repeat;
+		background-size: 100% 100%;
+	}
+	.daiban ul.conditionD>div>div>div>span{
+		float: left;
+	}
+	.daiban ul.conditionD>div>div>div>span.bianJ{
+		width: 18px;
+		height: 18px;
+		margin-top: 11px;
+    	margin-right: 8px;
+		background: url("img/bianJ.png") 0 0 no-repeat;
+		background-size: 100% 100%;
+	}
+	.daiban ul.conditionD>div>div>div>span.del{
+		width: 18px;
+		height: 18px;
+		margin-top: 11px;
+    	margin-right: 8px;
+    	margin-left: 8px;
+		background: url("img/youhui.png") 0 0 no-repeat;
+		background-size: 100% 100%;
+	}
+	.daiban ul.conditionD>div>div{
+		float: left;
+	    font-size: 12px;
+	    margin-right: 6%;
+	    line-height: 45px;
+	}
+	.daiban ul.conditionD>div>div>div{
+		line-height: 46px;
+		width: 50%;
+		float: left;
+	}
+	.daiban ul.conditionD>div>div.moR{
+		margin-right: 0px;
+		margin-left: 7%;
+	}
+	.daiban ul.conditionD .diZ{
+		background-color: #fbfbfb;
+	    display: inline-block;
+	    width: 80%;
+	    padding: 10px 4px 4px 4px;
+	    font-size: 13px;
+		line-height: 20px;/*
+		position: absolute;
+		left: 16%;*/
+	}
+	ul.conditionD li .pitchBut{
+		background: url("img/xuanzhong2.jpg") 0 0 no-repeat;
+		background-size: 100% 100%;
+	    margin: 10px 6% 0px 2%;
+	    width: 20px;
+    	height: 20px;
+    	float: left;
+	}
+	ul.conditionD li.xuan .pitchBut{
+		background: url("img/xuanzhong3.jpg") 0 0 no-repeat;
+		background-size: 100% 100%;
+	}
+	ul.conditionD .xuanzhong3{
+		background: url("img/xuanzhong3.jpg") 0 0 no-repeat;
+		background-size: 100% 100%;
+	}
+	.daiban_Dizhi .But{
+		display: block;
+		bottom: 0px;
+		height: 45px;
+		background: #f0871a;
+		padding: 0px;
+	}
+	.But button{
+		width: 100%;
+		border-radius: 0px;
+		background: url("img/xinZ.png") 28% 13px no-repeat;
+		background-size: 20px 20px;
+	}
+	.daiban ul.conditionD li textarea{
+		color: #797979;
+	    font-size: 13px;
+	    position: absolute;
+	    left: 16%;
+	    top: 8px;
+	    border: none;
+	    width: 80%;
+	    height: 34px;
+	    word-break: break-all;
+	    font-family: Arial,"Microsoft Yahei";
+	    display: none;
+	}
+	.daiban ul.conditionD li{
+		border: none;
+	    background: #fff;
+	    line-height: 16px;
+	}
+	.daiban ul.conditionD li img{
+		width: 16px;
+    	margin: -5px 0px 0px 0;
+	}
+	/*+77+
+	:nth-child(3){
+		margin-bottom: 10px;
+	}*/
+</style>
+<body>
+	<div class="box" style="padding-bottom:0px;">
+		<!--导航-->
+		<div class="nav">
+			<div class="navL">
+				<a href="#" onClick="TimeClick();">
+					<img src="img/fanhui.png" class="fanhui" />
+				</a>
+			</div><!-- 
+			<div class="navR" style="width:50px;">
+				<a href="地址填写.html">
+					<img src="img/tianjia.png" id="kefu" style="width:20px;" />
+				</a>
+			</div> -->
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div class="con queRenD">
+			<div style="height:10px;background:#f6f6f6;"></div>
+			<div class="daiban daiban_Dizhi">
+				<ul class="conditionD">
+					<li style="margin-top:0px;" class="xuan">
+						<a>
+							<span class="pitchBut"></span>
+							<span class="diZ">地址：<span>北京市朝阳区东八李庄风社区北京市朝阳区东八李庄风社区22北京市朝阳区东八李庄风社区北京市朝阳区东八李庄风社区22</span></span>
+							<textarea></textarea>
+						</a>
+					</li>
+					<div class="hong">
+						<div class="moR">
+							<span class="pitchBut"></span>
+							<span>设置默认地址</span>
+						</div>
+						<div style="float: right;width: 38%;">
+							<div class="bian_J">
+								<span class="bianJ"></span>
+								<span class="bianJ_2">编辑</span>
+							</div>
+							<div class="Dlet">
+								<span class="del"></span>
+								<span>删除</span>
+							</div>
+						</div>
+					</div>
+					<li>
+						<a>
+							<span class="pitchBut"></span>
+							<img src="img/dingWei.png" style="position: absolute;top:16px;" /><span class="diZ" style="width:70%;margin-left:6%;">地址：<span>北京市朝阳区东八李庄风社区北京市朝阳区东八李庄风社区22</span></span>
+							<textarea style="width:78%;left:22%;"></textarea>
+						</a>
+					</li>
+					<div>
+						<div class="moR">
+							<span class="pitchBut"></span>
+							<span>设置默认地址</span>
+						</div>
+						<div style="float: right;width: 38%;">
+							<div class="bian_J">
+								<span class="bianJ"></span>
+								<span class="bianJ_2">编辑</span>
+							</div>
+						</div>
+					</div>
+					<li>
+						<a>
+							<span class="pitchBut"></span>
+							<span class="diZ">地址：<span>北京市朝阳区东八李庄风社区北京市朝阳区东八李庄风社区22</span></span>
+							<textarea></textarea>
+						</a>
+					</li>
+					<div>
+						<div class="moR">
+							<span class="pitchBut"></span>
+							<span>设置默认地址</span>
+						</div>
+						<div style="float: right;width: 38%;">
+							<div class="bian_J">
+								<span class="bianJ"></span>
+								<span class="bianJ_2">编辑</span>
+							</div>
+							<div class="Dlet">
+								<span class="del"></span>
+								<span>删除</span>
+							</div>
+						</div>
+					</div>
+				</ul>
+				<div class="But">
+					<button>新增地址</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		/***动态删除地址选项***/
+		$("#delete").click(function (){
+			$("ul.conditionD li.xuanzhongL").remove();
+		});
+		
+		$(".daiban ul.conditionD").on("click","li",function() {
+		     $(this).addClass("xuan").siblings("li").removeClass("xuan");
+		});
+
+		$(".daiban").on("click","ul.conditionD>div",function() {
+		     $(this).addClass("hong").siblings("div").removeClass("hong");
+		});
+
+		var shiJian = 1;
+		$(".daiban").on("click","ul.conditionD>div>div>div.bian_J",function() {
+			if (shiJian == 1) {
+				$(this).parent().parent().prev().children().children('textarea').val($(this).parent().parent().prev().children().children().children('.daiban ul.conditionD .diZ span').text());
+				$(this).parent().parent().prev().children().children('textarea').fadeIn();
+				$(this).parent().parent().prev().children().children('textarea').height($(this).parent().parent().prev().children().children().children('.daiban ul.conditionD .diZ span').height());
+				$(this).children('.bianJ_2').text("保存");
+				$(this).children('.bianJ').css({"background":"url('img/bian2.png') 0 0 no-repeat","backgroundSize":"100% 100%"});
+				shiJian = 2;
+			}else{
+				$(this).parent().parent().prev().children().children().children('.daiban ul.conditionD .diZ span').text($(this).parent().parent().prev().children().children('textarea').val());
+				
+				$(this).parent().parent().prev().children().children('textarea').fadeOut();
+				$(this).children('.bianJ_2').text("编辑");
+				$(this).children('.bianJ').css({"background":"url('img/bianJ.png') 0 0 no-repeat","backgroundSize":"100% 100%"});
+				shiJian = 1;
+			};
+		});
+
+		$(".daiban").on("click","ul.conditionD>div>div>div.Dlet",function (){
+			$(this).parent().parent().prev().remove();
+			$(this).parent().parent().remove();
+		});
+
+		$(".But").click(function (){
+
+			$(".daiban ul").append(
+				'<li>'+
+				'   <a>'+
+				'		<span class="pitchBut"></span>'+
+				'		<span class="diZ">地址：<span>北京市朝阳区东八李庄风社区北京市朝阳区东八李庄风社区</span></span>'+
+				'		<textarea></textarea>'+
+				'	</a>'+
+				'</li>'+
+				'<div>'+
+				'	<div class="moR">'+
+				'		<span class="pitchBut"></span>'+
+				'		<span>设置默认地址</span>'+
+				'	</div>'+
+				'	<div style="float: right;width: 38%;">'+
+				'		<div class="bian_J">'+
+				'			<span class="bianJ"></span>'+
+				'			<span class="bianJ_2">编辑</span>'+
+				'		</div>'+
+				'		<div class="Dlet">'+
+				'			<span class="del"></span>'+
+				'			<span>删除</span>'+
+				'		</div>'+
+				'	</div>'+
+				'</div>'
+				);
+		});
+
+
+		function TimeClick(){
+			
+			var Scon = $(".daiban ul.conditionD>li.xuan .diZ span").text();
+			
+			$('.dingDanTi ul li.place .right input', window.parent.document).val(Scon);
+			$('#ii2', window.parent.document).fadeOut();
+		}
+	</script>
+</body>
+</html>

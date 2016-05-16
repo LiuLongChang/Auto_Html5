@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<title>车务百科</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<style type="text/css">
+		.con .nianjianB{
+			position: relative;
+		}
+		.touX{
+			position: absolute;
+			bottom: 0px;
+			left: 10%;
+			color: #fff;
+			font-size: 18px;
+			line-height: 80px;
+		}
+		.con .nianjianB .touX img{
+			width: 76px;
+			margin-right: 20px;
+		}
+		.baikeCon{
+			width: 100%;
+			font-size: 14px;
+			line-height: 20px;
+		}
+		.baikeCon>div{
+			color: #c6c6c6;
+			margin-bottom: 12px;
+			border-top: 1px solid #c6c6c6;
+			padding-top: 12px;
+		}
+		.baikeCon>div img{
+			width: 50px;
+			margin-left: 20px;
+			margin-right: 6px;
+		}
+		.baikeCon>div img.hot{
+			width: 25px;
+    		margin: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box" style="padding:0px;height:100px;">
+		<!--导航-->
+		<div class="nav">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<img src="img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">在线客服</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<!---年检列表---->
+		<div class="con">
+			<div class="nianjianB">
+				<img src="img/lianxi.jpg" />
+				<div class="touX">
+					<img src="img/zhifubao.png"/>
+					车务君
+				</div>
+			</div>
+			<div class="baikeCon">
+				<div>
+					<img src="img/zhanwei.jpg"/>
+					<span>如何办理机动车驾驶证？</span>
+					<img src="img/hot.png" class="hot" />
+				</div>
+				<div>
+					<img src="img/zhanwei.jpg"/>
+					<span>如何办理机动车驾驶证？</span>
+				</div>
+				<div>
+					<img src="img/zhanwei.jpg"/>
+					<span>如何办理机动车驾驶证？</span>
+				</div>
+				<div>
+					<img src="img/zhanwei.jpg"/>
+					<span>如何办理机动车驾驶证？</span>
+				</div>
+				<div>
+					<img src="img/zhanwei.jpg"/>
+					<span>如何办理机动车驾驶证？</span>
+				</div>
+				<div>
+					<img src="img/zhanwei.jpg"/>
+					<span>如何办理机动车驾驶证？</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function (){
+			/***在线客服显示隐藏动态控制***/
+			$("#kefu").click(function (event){
+				$("#zaiX").fadeIn();
+				event.stopPropagation();
+			});
+			$(document).click(function (){
+				$("#zaiX").fadeOut();
+			});
+		});
+		
+	</script>
+</body>
+</html>

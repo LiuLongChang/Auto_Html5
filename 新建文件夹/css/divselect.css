@@ -1,0 +1,49 @@
+#divselect,#divselect1{
+	width:67%; 
+	position:absolute; 
+	z-index:10000;
+	right: 0px;
+	top: 76%;
+}
+#divselect cite,#divselect1 cite{
+	width:80%; 
+	height:51px;
+	line-height:51px; 
+	display:block; 
+	color:#807a62; 
+	cursor:pointer;
+	font-style:normal;
+	font-size: 15px;
+	padding-left: 5%;
+    padding-right: 14%;
+	border:1px solid #c6c6c6;
+	border-top: none;
+	border-bottom: 0px; 
+	background: url("../img/zhuX.png") no-repeat 96% center;
+    background-size: 20px;
+}
+#divselect ul,#divselect1 ul{
+	width:99%;
+	border:1px solid #c6c6c6; 
+	background-color:#ffffff; 
+	position:absolute; 
+	z-index:20000; 
+	margin-top:-1px; 
+	display:none;
+	color: #797979;
+}
+#divselect ul li,#divselect1 ul li{
+	height:40px; 
+	line-height:40px;
+	overflow: hidden;
+	border-bottom: 1px solid #c6c6c6;
+}
+
+#divselect ul li .left,#divselect1 ul li .left{
+	float: left;
+	margin-left: 6px;
+}
+#divselect ul li .right,#divselect1 ul li .right{
+	float: right;
+	margin-right: 12px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>我的订单_订单状态_结果详情_处理方案</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/daiban.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<body>
+	<div class="box">
+		<!--导航-->
+		<div class="nav" style="background:#fff;">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<img src="img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">在线客服</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<div class="con dingXiang" style="padding-bottom:70px;">
+			<div style="height:10px;background:#eaeaea;"></div>
+			<ul class="chuliangan">
+				<li class="hui" style="padding-bottom:0px;">
+					<div class="Fangfan">
+						请选择对您爱车的处理方案：
+					</div>
+				</li>
+				<li class="sBingS">
+					<div class="Fangfan Fangfan1">
+						<span class="left">
+							车务360代为修理：<br>
+							<img src="img/FanganB.png" />
+						</span>
+					</div>
+					<span class="sBing sBingS"></span>
+					<div class="text">
+						描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+					</div>
+
+					<div class="Feiyong">
+						<span>费用：</span>
+						<span class="hong">￥260</span>
+					</div>
+				</li>
+				<li>
+					<div class="Fangfan">
+						<span class="left">
+							请送去4S店处理：
+						</span>
+					</div>
+					<span class="sBing"></span>
+					<div class="text">
+						描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+					</div>
+
+					<div class="Feiyong">
+						<span>费用：</span>
+						<span class="hong">￥2000</span>
+					</div>
+				</li>
+				<li style="padding-bottom:0px;">
+					<div class="Fangfan">
+						<span class="left">
+							谢谢，我自行处理，请将车送回：
+						</span>
+					</div>
+					<span class="sBing"></span>
+				</li>
+			</ul>
+			<div class="fuJian shigu_con">
+				<div>附件：</div>
+				<div style="margin-top:10px;">
+					<input type="file">
+					<div class="FnfDa">
+						<img src="img/chuan.jpg"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="But">
+				<span class="Jiance">修理费：</span>
+				<div class="Butt">
+					<span>￥260</span>
+					<button>确认</button>
+				</div>
+			</div>
+		</div>
+		<div class="datuShow">
+			<span class="left">返回</span>
+			<span class="right">删除</span>
+			<div><img src="img/nianjian2.jpg"/></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/fangda.js"></script>
+	<script type="text/javascript">
+		$(".dingXiang ul li").click(function (){
+			$(this).addClass("sBingS").siblings().removeClass("sBingS");
+		});
+		
+	</script>
+</body>
+</html>

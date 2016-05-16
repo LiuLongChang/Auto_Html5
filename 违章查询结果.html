@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>违章查询结果</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/daiban.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<body>
+	<div class="box" style="padding-bottom:0px;">
+		<!--导航-->
+		<div class="nav">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<a>
+					<img src="img/keFu.png" id="kefu" />
+				</a>
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">在线客服</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<div class="con queRenD">
+			<div style="height:10px;background:#f6f6f6;"></div>
+			<div class="daiban daiban_Dizhi">
+				<ul class="conditionW">
+					<li style="margin-top:20px;">
+						<div>
+							<span>违章时间：</span>
+							<span class="hui">2015年01月01日 &nbsp; &nbsp; 19:20</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<span>违章地点：</span>
+							<span class="hui">柳树沟大葫芦村</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<span>处理情况：</span>
+							<span class="hui">
+								罚款
+								<span class="hong">200</span>，
+								扣
+								<span class="hong">3</span>分
+							</span>
+						</div>
+					</li>
+					<li style="border:none;">
+						<div>
+							<span>违章描述：</span>
+							<span class="hui">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述v</span>
+						</div>
+					</li>
+				</ul>
+				<img src="img/weizhangB.png" class="weizhangB" />
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		/***在线客服显示隐藏动态控制***/
+		$("#kefu").click(function (event){
+			$("#zaiX").fadeIn();
+			event.stopPropagation();
+		});
+		$(document).click(function (){
+			$("#zaiX").fadeOut();
+		});
+
+		
+	</script>
+</body>
+</html>

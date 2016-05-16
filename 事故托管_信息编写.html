@@ -1,0 +1,184 @@
+<%@ page language="java" import="java.util.*" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>事故托管_信息编写</title>
+</head>
+<%@ include file="/WEB-INF/weixin/head.jsp"%>
+<script type="text/javascript">
+function uploadFront(){
+	var options = {
+		url:'/uploadPic.do',
+		type:'post',
+		dataType :'json',
+		success : function(res){
+			if (res.meta.success=1) {
+				//返回路径  <img src=""/>
+				$("#front").attr("src",res.data);
+			} else {
+				alert(res.meta.message);
+			}
+		}
+	}
+
+	//异步上传
+	$("#imgform").ajaxSubmit(options);
+	
+}
+
+</script>
+<body>
+	<div class="box" style="padding-bottom:0px;">
+	<form action="" id="imgform" method="post" enctype="multipart/form-data">
+		<!--导航-->
+		<div class="nav">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<img src="img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">在线客服</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<div class="shigu_xinxi">
+			<div class="hui"></div>
+			<h2>
+				<span>请根据提示完成以下信息：</span>
+			</h2>
+			<div class="shigu_con">
+				<div>车况照片：</div>
+				<ul>
+					<li>
+						<input type="file" onchange="uploadFront()" name="pic">
+						<div class="FnfDa">
+							<img src="/assets/img/chuan.jpg" id="front" />
+						</div>
+						
+						前侧45°
+					</li>
+					<li>
+						<div class="FnfDa">
+							<img src="/assets/img/nianjian2.jpg"/>
+						</div>
+						后侧45°
+					</li>
+					<li>
+						<input type="file" onchange="uploadFront()" name="pic">
+						<div class="FnfDa">
+							<img src="img/chuan.jpg"/>
+						</div>
+						左
+					</li>
+					<li>
+						<input type="file">
+						<div class="FnfDa">
+							<img src="img/chuan.jpg"/>
+						</div>
+						右
+					</li>
+				</ul>
+			</div>
+			<div class="shigu_con">
+				<div>证件类照片：</div>
+				<ul>
+					<li>
+						<input type="file">
+						<div class="FnfDa">
+							<img src="img/chuan.jpg"/>
+						</div>
+						行驶证
+					</li>
+					<li>
+						<input type="file">
+						<div class="FnfDa">
+							<img src="img/chuan.jpg"/>
+						</div>
+						驾驶证
+					</li>
+					<li>
+						<input type="file">
+						<div class="FnfDa">
+							<img src="img/chuan.jpg"/>
+						</div>
+						省份证
+					</li>
+					<li>
+						<input type="file">
+						<div class="FnfDa">
+							<img src="img/chuan.jpg"/>
+						</div>
+						保险单
+					</li>
+				</ul>
+			</div>
+			<div class="shigu_con">
+				<div>其他：</div>
+				<ul>
+					<li>
+						<input type="file">
+						<div class="FnfDa">
+							<img src="img/chuan.jpg"/>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="shigu_Neirong">
+			<ul>
+				<li>
+					<div>
+						<div>
+							<input type="text" value="" placeholder="请输入发生事故的详情地点" class="rightB" />
+							<img src="img/dingWei.png" />
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div>
+							<input type="text" value="" placeholder="请输入发生事故的时间" />
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div>
+							<input type="text" value="" placeholder="请输入联系电话" />
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="shigu_con zhifuChenggong ">
+			<div>备注：</div>
+			<div class="shigu_conText">
+				<textarea placeholder="请输入您的备注信息"></textarea>
+			</div>
+			<div class="xinxiT">
+				您的信息提交后，五到十分钟内客服会与您联系。<br>
+				(信息提示页显示该内容，所有信息提示页格式统一)
+			</div>
+			<button>提交</button>
+		</div>
+		<div class="datuShow">
+			<span class="left">返回</span>
+			<span class="right">删除</span>
+			<div><img src="img/nianjian2.jpg"/></div>
+		</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="js/fangda.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<title>我的订单_已完成_查看物流</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/daiban.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<style type="text/css">
+	.yunDan img {
+	    width: 55px;
+	    float: left;
+	    margin: 30px 20px;
+	}
+	.dingZhuang>div ul.show{
+		background: #fff;
+	}
+	.dingZhuang>div .chakan li img{
+		top: 57%;
+	    width: 16px;
+	    position: absolute;
+	    left: -9px;
+	}
+	.dingZhuang>div .zhunagTaiC li{
+		border-left: 1px solid #dedede;
+	}
+	.dingZhuang>div .zhunagTaiC li.hong{
+		border-left: 1px solid #f0871a;
+	}
+	.dingZhuang>div .zhunagTaiC li:nth-child(1)>img{
+		top: 48%;
+		width: 24px;
+    	position: absolute;
+    	left: -14px;
+	}
+</style>
+<body>
+	<div class="box" style="padding-bottom:0px;height:100%;">
+		<!--导航-->
+		<div class="nav" style="background:#fff;">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<img src="img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">在线客服</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<div class="con dingDanTi queRenD dingZhuang">
+			<div class="yunDan">
+				<img src="img/nianjianBW.png" />
+				<div>
+					业务类型：<span>年审换证</span><br>
+					承运来源：<span>顺丰快递</span><br>
+					运单号：<span>489529847294826</span>
+				</div>
+			</div>
+			<div style="background:#eaeaea;height:10px;"></div>
+			<div>
+				<ul class="zhunagTaiC show chakan" style="border:none;">
+					<li class="hong">
+						<img src="img/liucheng.png"/>
+						<div class="">
+							<img src="img/dangdanL.png" />
+							<span class="left">配送员：高大上，电话138000138000，正在为您配送，请稍候！</span><br>
+							<span class="left">2015年12月31日</span>
+						</div>
+					</li>
+					<li>
+						<img src="img/liucheng.png"/>
+						<div class="">
+							<img src="img/dangdanL.png" />
+							<span class="left top">正在分配快递员</span>
+							<span class="left">2015年12月31日</span>
+						</div>
+					</li>
+					<li>
+						<img src="img/liucheng.png"/>
+						<div class="">
+							<img src="img/dangdanL.png" />
+							<span class="left top">快件已到达玫瑰花园小区站点</span>
+							<span class="left">2015年12月31日</span>
+						</div>
+					</li>
+					<li>
+						<img src="img/liucheng.png"/>
+						<div class="">
+							<img src="img/dangdanL.png" />
+							<span class="left top">快件已到达东城区中转站</span>
+							<span class="left">2015年12月31日</span>
+						</div>
+					</li>
+					<li>
+						<img src="img/liucheng.png"/>
+						<div class="">
+							<img src="img/dangdanL.png" />
+							<span class="left top">西城区已发出，下一站东城区中转站</span>
+							<span class="left">2015年12月31日</span>
+						</div>
+					</li>
+					<li>
+						<img src="img/liucheng.png"/>
+						<div class="">
+							<img src="img/dangdanL.png" />
+							<span class="left top">顺丰速递已揽件</span>
+							<span class="left">2015年12月31日</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		/***在线客服显示隐藏动态控制***/
+		$("#kefu").click(function (event){
+			$("#zaiX").fadeIn();
+			event.stopPropagation();
+		});
+		$(document).click(function (){
+			$("#zaiX").fadeOut();
+		});
+
+		/***所需条件动态切换内容***/
+		$(".dingZhuang .dingZhuang_N span").click(function(){
+			$(this).addClass("hong").siblings().removeClass("hong");
+			$(".dingZhuang>div ul").hide().eq($('.dingZhuang .dingZhuang_N span').index(this)).show(); 
+		});
+	</script>
+</body>
+</html>

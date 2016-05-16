@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<title>最新活动</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/daiban.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<style type="text/css">
+	.shigu ul li{
+		background: #e1e0e0;
+		padding: 0px;
+		margin: 0px;
+	}
+	.shigu ul li div{
+		width: 100%;
+		background: #fff;
+		color: #797979;
+		font-size: 14px;
+		text-align: center;
+		margin: 0px;
+	}
+	.shigu ul li div img{
+		margin: 0px;
+	}
+	.shigu ul li div.conI{
+		padding: 25px 0px 25px 0px;
+		background: #e1e0e0;
+	}
+	.shigu ul li div.conT{
+		text-align: left;
+	}
+	.shigu ul li div.conT img{
+		width: 20%;
+		margin: 5px 18px 5px 18px;
+	}
+	
+</style>
+<body>
+	<div class="box" style="padding-bottom:0px;">
+		<!--导航-->
+		<div class="nav">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<img src="img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">在线客服</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<div class="shigu">
+			<ul>
+				<li>
+					<div class="conI">
+						<img src="img/zhanweiD.png" />
+					</div>
+					<div class="conT">
+						<img src="img/xuan.png" />
+						<span>许个愿吧，我来帮你实现</span>
+					</div>
+				</li>
+				<li>
+					<div class="conI">
+						<img src="img/zhanweiD.png" />
+					</div>
+					<div class="conT">
+						<img src="img/xuan.png" />
+						<span>许个愿吧，我来帮你实现</span>
+					</div>
+				</li>
+				<li>
+					<div class="conI">
+						<img src="img/zhanweiD.png" />
+					</div>
+					<div class="conT">
+						<img src="img/xuan.png" />
+						<span>许个愿吧，我来帮你实现</span>
+					</div>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+	<script type="text/javascript">
+		/***在线客服显示隐藏动态控制***/
+		$("#kefu").click(function (event){
+			$("#zaiX").fadeIn();
+			event.stopPropagation();
+		});
+		$(document).click(function (){
+			$("#zaiX").fadeOut();
+		});
+	</script>
+</body>
+</html>

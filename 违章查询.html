@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>违章查询</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/daiban.css">
+<!-- 下拉框css样式 -->
+<link rel="stylesheet" type="text/css" href="css/divselect.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript" src="js/divselect.js"></script>
+<style type="text/css">
+	.Chepan{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		background: rgba(000,000,000,0.5);
+		z-index: 10001;
+		display: none;
+	}
+	.Chepan ul{
+		position: fixed;
+		bottom: 0px;
+		float: left;
+		padding: 6px 0px 6px 0px;
+		background: #e5e5e5;
+		width: 100%;
+	}
+	.Chepan ul li{
+		width: 10%;
+		float: left;
+		color: #000;
+		background: #fff;
+		font-size: 14px;
+		line-height: 30px;
+		margin-left: 2.3%;
+		text-align: center;
+		margin-bottom: 6px;
+		border-radius: 6px;
+		max-width: 32px;
+	}
+	ul.conditionZche li span {
+	    float: left;
+	    width: 80px;
+	    margin: 0px 10px 0px 15px;
+	    color: #000;
+	    font-size: 16px;
+	}
+	.conditionZche #divselect, .conditionZche #divselect1 {
+	    width: 100%;
+	    left: 0px;
+	    top: 0px;
+	}
+	.conditionZche .chaI {
+	    width: 34%;
+	    padding-left: 10px;
+	    width: 79px;
+    	margin-left: 0px;
+	}
+	ul.conditionZche li.beizu{
+		border-bottom: none;
+	}
+	ul.conditionZche li.beizu span{
+		font-size: 12px;
+		color: #898989;
+		width: 170px;
+	}
+</style>
+<body>
+	<div class="box">
+		<!--导航-->
+		<div class="nav">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<img src="img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">在线客服</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<!---年检列表---->
+		<div class="con conS">
+			<div style="width:100%;height:12px;background:#f6f6f6;"></div>
+			<ul class="condition conditionZche">
+				<!-- <li style="border-top: 1px solid #c6c6c6;">
+					<span>姓名：</span>
+					<input type="text" placeholder="请输入车主姓名"/>
+				</li> -->
+				<!-- <li>
+					<span>车型：</span>
+					<form action="" method="post">
+					  <div id="divselect">
+					      <cite style="width: 90px;margin-left: 105px;padding-left:32px;padding-right:44px;">小型车</cite>
+					      <ul style="width:152px;border-bottom:none;margin-left: 105px;">
+					         <li>
+					         	小型车1
+					         </li>
+					         <li>
+					         	小型车22
+					         </li>
+					      </ul>
+					    </div>
+					    <input name="" type="hidden" value="" id="inputselect"/>
+					</form>
+				</li> -->
+				<li style="border-top: 1px solid #c6c6c6;">
+					<span>车牌号：</span>
+					<span style="width:55px;height:50px;margin-left:0px;background: url('img/zhuX.png') no-repeat 83% center;background-size:18px;border:none;padding-left:10px;border-left:1px solid #c6c6c6;border-right:1px solid #c6c6c6;  " class="XuanChe">京</span>
+					<span class="right widt4" style="margin:0px;width:128px;">
+						<input type="text" otitle="" value="" otype="" id="autonumI" placeholder="车牌号码" class="chaI tong" />
+					</span> 
+				</li>
+				<li>
+					<span>发动机号：</span>
+					<input type="text" placeholder="请输入发动机号"/>
+				</li>
+				<li class="beizu">
+					<span></span>
+					<span>注：违章查询需要输入发动机号</span>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+	<div class="But But1">
+		<button>添加</button>
+	</div>
+	<div class="Chepan">
+		<ul>
+			<li>京</li>
+			<li>沪</li>
+			<li>浙</li>
+			<li>苏</li>
+			<li>粤</li>
+			<li>鲁</li>
+			<li>晋</li>
+			<li>冀</li>
+			<li>豫</li>
+			<li>川</li>
+			<li>渝</li>
+			<li>辽</li>
+			<li>吉</li>
+			<li>黑</li>
+			<li>皖</li>
+			<li>鄂</li>
+			<li>湘</li>
+			<li>赣</li>
+			<li>闽</li>
+			<li>陕</li>
+			<li>宁</li>
+			<li>蒙</li>
+			<li>津</li>
+			<li>贵</li>
+			<li>云</li>
+			<li>桂</li>
+			<li>琼</li>
+			<li>青</li>
+			<li>新</li>
+			<li>藏</li>
+		</ul>
+	</div>
+	<!-- 下拉框样式控制 -->
+	<script type="text/javascript">
+		/***下拉框样式动态显示***/
+		$(function(){
+		  	$.divselect("#divselect","#inputselect");
+		  	/***在线客服显示隐藏动态控制***/
+			$("#kefu").click(function (event){
+				$("#zaiX").fadeIn();
+				event.stopPropagation();
+			});
+			$(document).click(function (){
+				$("#zaiX").fadeOut();
+			});
+			/***车俩简称选择***/
+			$(".XuanChe").click(function (){
+				$(".Chepan").fadeIn();
+				return false;
+			});
+			$("body").click(function(){
+				$(".Chepan").fadeOut();
+			});
+			$(".Chepan ul li").click(function (){
+				$(".XuanChe").text($(this).text());
+				$(".Chepan").fadeOut();
+				return false;
+			});
+		});
+		
+		
+	</script>
+</body>
+</html>

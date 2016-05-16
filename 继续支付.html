@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>继续支付</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<body>
+	<div class="box" style="padding-bottom: 24px;background-color: #eaeaea;    overflow: hidden;height:100%;">
+		<!--导航-->
+		<div class="nav" style="background:#fff;">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<img src="img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">
+					<a href="http://float2006.tq.cn/static.jsp?version=vip&admiuin=9694349&ltype=0&iscallback=1&page_templete_id=92765&is_message_sms=0&is_send_mail=0&uin=9694349">在线客服</a>
+				</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<div class="con dingDanTi queRenD" style="padding-top: 13px;">
+			<ul class="condition queRenDU">
+				<li class="ziqu" style="padding-top:20px;">
+					<span class="pitchBut"></span>
+					<div>
+						<span>自己取送</span>
+						<span class="pitchB1 hoang">-￥100</span><br>
+						<img src="img/ziqu.png"/>
+					</div>
+				</li>
+				<li>
+					<span class="pitchBut"></span>
+					<div>
+						<span>在线支付</span>
+						<span class="hui">(目前仅支持在线支付)</span>
+					</div>
+				</li>
+				<li>
+					<span class="pitchBut"></span>
+					<div class="pitchButI">
+						<span>优惠券</span>
+						<span class="pitchB1 hoang">-￥50</span>
+						<a href="index.html"><img src="img/LeftBin.png" /></a>
+					</div>
+				</li>
+				<li class="fapiao">
+					<span class="pitchBut"></span>
+					<div>
+						<span>发票</span>
+						<span class="hui">(抬头如果不填写则默认为个人)</span><br>
+						<input type="text" value="" placeholder="个人" />
+					</div>
+				</li>
+			</ul>
+			<img src="img/dItuB.png" class="dItuB" />
+		</div>
+	</div>
+	<div class="bot botZ">
+		<div>
+			<span>已优惠</span>
+			<span class="Hong">￥99</span>
+			<span class="Left">总计</span>
+			<span class="Hong">￥49</span>
+		</div>
+		<button class="Zhifu">立即支付</button>
+	</div>
+	<div class="dingDanQue">
+		<div class="dingDanQue_box">
+			<div>
+				<h2>请选择支付方式</h2>
+				<div class="left">
+					<img src="img/zhifubao.png" />
+					支付宝支付
+				</div>
+				<div class="right">
+					<img src="img/weixin.png" />
+					微信支付
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+
+			/***在线客服显示隐藏动态控制***/
+			$("#kefu").click(function (event){
+				$("#zaiX").fadeIn();
+				event.stopPropagation();
+			});
+			$(document).click(function (){
+				$("#zaiX").fadeOut();
+			});
+			/***动态选择优惠模块***/
+			$("ul.condition li").click(function (){
+				if (!$(this).hasClass('xuanzhongLB')) {
+					$(this).addClass("xuanzhongLB");
+				}else {
+					$(this).removeClass("xuanzhongLB");
+				}
+			});
+			/***支付方式动态显示***/
+			$(".Zhifu").click(function (){
+				$(".dingDanQue").fadeIn();
+			});
+			$(".dingDanQue").click(function (e){
+				$(".dingDanQue").fadeOut();
+				e.stopPropagation(); 
+			});
+		});
+		
+	</script>
+</body>
+</html>

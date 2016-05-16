@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>我的订单_申请退款</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/daiban.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<body>
+	<div class="box">
+		<!--导航-->
+		<div class="nav" style="background:#fff;">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<img src="img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">在线客服</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<div class="con dingXiang" style="padding-bottom:70px;">
+			<div style="height:10px;background:#f6f6f6;"></div>
+			<ul style="background:#f6f6f6;" class="tuiKuang">
+				<li>
+					<span>退款金额：</span>
+					<input type="text" placeholder="请输入金额" />
+				</li>
+				<li class="tuiKL">
+					<span>退款理由：</span>
+					<input type="text" placeholder="" value="请选择理由" disabled="disabled" />
+				</li>
+				<li>
+					<span>退款说明：</span>
+					<input type="text" placeholder="请输入金额" />
+					<div class="shuoming">
+						说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明
+					</div>
+					<img src="img/tuiKuangBei.png" class="tuiKuangBei" />
+				</li>
+			</ul>
+			<div class="Liyou">
+				<span>与客服商议后</span>
+				<span>订单没有完成</span>
+				<span>取消订单</span>
+			</div>
+			<div class="But" style="display: block;border:none;">
+				<button>提交</button>
+			</div>
+		</div>
+	</div>
+	<div class="tiShi">
+		<img src="img/tuiKan.png" />
+	</div>
+	<script type="text/javascript">
+		/***在线客服显示隐藏动态控制***/
+		$("#kefu").click(function (event){
+			$("#zaiX").fadeIn();
+			event.stopPropagation();
+		});
+		$(document).click(function (){
+			$("#zaiX").fadeOut();
+		});
+
+		/***动态选择退款理由***/
+		$(".dingXiang>ul.tuiKuang li.tuiKL").click(function (){
+			var dingXiang = $(".dingXiang .Liyou");
+			if(dingXiang.css("display")=="none"){
+				dingXiang.slideDown();
+				//$(".dingXiang .Liyou").slideDown();
+			}else{
+				dingXiang.slideUp();
+			}
+		});
+		$(".dingXiang .Liyou span").click(function(){
+			var SpanV = $(this).text();
+			$(".dingXiang>ul.tuiKuang li.tuiKL input").val(SpanV);
+			$(".dingXiang .Liyou").slideUp();
+		});
+
+		$(".dingXiang>div.But").click(function(){
+			$(".tiShi").fadeIn();
+		});
+	</script>
+</body>
+</html>

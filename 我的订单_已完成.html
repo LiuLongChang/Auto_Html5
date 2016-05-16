@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<%@ include file="/WEB-INF/jsp/weixin/head.jsp"%>
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>我的订单_已完成</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/daiban.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<body>
+	<div class="box" style="padding-bottom:0px;height:100%;">
+		<!--导航-->
+		<div class="nav" style="background:#fff;">
+			<div class="navL">
+				<img src="/assets/img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<img src="/assets/img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="/assets/img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="/assets/img/zaiXt.png"/>
+			<ul>
+				<li class="xian">在线客服</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<div class="con dingDanTi queRenD dingZhuang">
+			<div class="dingZhuang_N">
+				<span class="hong">已完成</span>
+				<span>进行中</span>
+			</div>
+			<div>
+			
+				<ul class="Wancheng show">
+				<c:forEach items="${finishedOrders}" var="finish">
+					<li style="border-top:none;">
+						<div class="top">
+							<div>
+								<img src="/assets/img/nianjianB.png" />
+								<span class="hei">服务项目：</span>
+								<span>${finish.title}</span>
+							</div>
+							<span>￥${finish.auditMoney}</span>
+							<div class="chuanJ">
+								<span>
+									<span class="hei">订单编号：</span>${finish.number}
+								</span><br>
+								<span>
+									<span class="hei">创建时间：</span>${finish.createTime}
+								</span>
+							</div>
+						</div>
+						<div class="bottom">
+							<span class="right">
+								合计：<span class="hong">￥${finish.payMoney}</span>
+								<span class="hui">（不含验车费）</span>
+							</span>
+							<button class="dian">查看详情</button>
+						</div>
+					</li>
+				</c:forEach>
+				</ul>
+				<ul class="Wancheng" style="border-top:1px solid #b6b6b6;">
+				<c:forEach items="${unFinishedOrders}" var="unFinish">
+					<li style="border-top:none;">
+						<div class="top">
+							<div>
+								<img src="/assets/img/nianjianB.png" />
+								<span class="hei">服务项目：</span>
+								<span>${finish.title}</span>
+								<img src="/assets/img/daiFu.png" class="zhuan"/>
+							</div>
+							<span>￥${finish.auditMoney}</span>
+							<div class="chuanJ">
+								<span>
+									<span class="hei">订单编号：</span>${finish.number}
+								</span><br>
+								<span>
+									<span class="hei">创建时间：</span>${finish.createTime}
+								</span>
+							</div>
+						</div>
+						<div class="bottom">
+							<span class="right">
+								合计：<span class="hong">￥${finish.payMoney}</span>
+								<span class="hui">（不含验车费）</span>
+							</span>
+							<button class="dian">查看详情</button>
+						</div>
+					</li>
+				</c:forEach>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		/***在线客服显示隐藏动态控制***/
+		$("#kefu").click(function (event){
+			$("#zaiX").fadeIn();
+			event.stopPropagation();
+		});
+		$(document).click(function (){
+			$("#zaiX").fadeOut();
+		});
+
+		/***所需条件动态切换内容***/
+		$(".dingZhuang .dingZhuang_N span").click(function(){
+			$(this).addClass("hong").siblings().removeClass("hong");
+			$(".dingZhuang>div ul").hide().eq($('.dingZhuang .dingZhuang_N span').index(this)).show(); 
+		});
+
+		$(".dingZhuang ul.Wancheng li div.bottom button").click(function (){
+			$(this).addClass("dian").siblings().removeClass("dian");
+		});
+	</script>
+</body>
+</html>

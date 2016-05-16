@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>提交订单</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<body>
+	<div class="box" style="padding-bottom: 24px;background-color: #eaeaea;">
+		<!--导航-->
+		<div class="nav" style="background:#fff;">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<img src="img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">
+					<a href="http://float2006.tq.cn/static.jsp?version=vip&admiuin=9694349&ltype=0&iscallback=1&page_templete_id=92765&is_message_sms=0&is_send_mail=0&uin=9694349">在线客服</a>
+				</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<div class="con dingDanTi" style="padding-bottom: 70px;">
+			<ul>
+				<li class="H2">
+					<span class="left">服务项目</span>
+					<span class="right">年检验车</span>
+				</li>
+				<li>
+					<span class="left">姓名</span>
+					<span class="right widt1">
+						<input type="text" name="country" value="" placeholder="嘉多宝" />
+					</span>
+				</li>
+				<li>
+					<span class="left">联系电话</span>
+					<span class="right widt2">
+						<input type="text" name="country" value="" placeholder="13800138000" />
+					</span>
+				</li>
+
+				<li>
+					<span class="left">车牌号</span>
+					<span class="right widt3">
+						<input type="text" name="country" value="" placeholder="京A0001" />
+					</span>
+				</li>
+
+				<li>
+					<span class="left">发动机号</span>
+					<span class="right widt4">
+						<input type="text" name="country" value="" placeholder="2312392742374723856" />
+					</span>
+				</li>
+
+				<li class="place">
+					<span class="left">接车地点</span>
+					<span class="right">
+						<input type="text" name="country" value="" disabled="disabled" placeholder="北京市朝阳区东八里庄东风社区..." />
+					</span>
+				</li>
+
+				<li class="place">
+					<span class="left">还车地点</span>
+					<span class="right">
+						<input type="text" name="country" value="" disabled="disabled" placeholder="北京市朝阳区东八里庄东风社区..." />
+					</span>
+				</li>
+				<li id="time" >
+					<a href="#">
+					<!-- <a href="#" onClick="callIframeField();"> -->
+						<span class="left">接车时间</span>
+						<span class="right" style="width:63%;font-size:14px;">
+							<input type="text" name="country" value="cc"  style="text-align: right;"/>
+						</span>
+					</a>
+				</li>
+			</ul>
+			<div class="beizhu2">
+				<img src="img/beizhu2.png"/>
+			</div>
+		</div>
+	</div>
+	<div class="bot">
+		<div>
+			<span>年检验车</span>
+			<span class="Hong">￥99</span>
+			<span class="Xiao">（不含检测费）</span><br>
+			<img class="hui" src="img/beizhu.png"/>
+		</div>
+		<button class="tijiao">提交</button>
+	</div>
+	<div class="DingTi">
+		<div>
+			订单提交中...
+		</div>
+	</div>
+	<iframe id="ii" src="我要代办_驾照年审_time.html" width="100%" frameborder="0" style="position: fixed;top: 0px;left: 0px;z-index: 1000000;height: 100%;background-color: #fff;display: none;"></iframe>
+	<iframe id="ii2" src="地址选择.html" width="100%" frameborder="0" style="position: fixed;top: 0px;left: 0px;z-index: 1000000;height: 100%;background-color: #fff;display: none;"></iframe>
+	<script type="text/javascript">
+		/***在线客服显示隐藏动态控制***/
+		$("#kefu").click(function (event){
+			$("#zaiX").fadeIn();
+			event.stopPropagation();
+		});
+		$(document).click(function (){
+			$("#zaiX").fadeOut();
+		});
+
+		$("#time").click(function(){
+			$("#ii").fadeIn();
+		});
+
+		$(".place").click(function(){
+			$("#ii2").fadeIn();
+		});
+		$(".tijiao").click(function (){
+			$(".DingTi").fadeIn();
+		});
+	</script>
+</body>
+</html>

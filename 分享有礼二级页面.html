@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>最新活动_分享</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<style type="text/css">
+	.con ul.yuanW{
+		width: 100%;
+
+	}
+	.con ul.yuanW li{
+		border-bottom: 1px solid #c4c4c4;
+		overflow: hidden;
+		padding: 16px 0px 16px 0px;
+	}
+	.con ul.yuanW li img{
+		width: 20%;
+		float: left;
+		margin: 12px 10px 0px 10px;
+	}
+	.con ul.yuanW li>div.xinxi{
+		float: left;
+		width: 70%;
+	}
+	.con ul.yuanW li>div>div{
+		width: 100%;
+		overflow: hidden;
+		line-height: 30px;
+	}
+	.con ul.yuanW li div .name{
+		font-size: 16px;
+		float: left;
+		font-weight: bold;
+	}
+	.con ul.yuanW li div .xin{
+		color: #f0871a;
+		float: right;
+		background: url("img/xin.png") 42px 7px no-repeat;
+		background-size: 15px 15px;
+		padding-right: 40px;
+		font-size: 16px;
+		margin-right: 5px;
+	}
+	.con ul.yuanW li div .xinD{
+		background: url("img/xinS.png") 42px 7px no-repeat;
+		background-size: 15px 15px;
+		
+	}
+	.con ul.yuanW li div .text{
+		font-size: 12px;
+    	line-height: 18px;
+    	height: 54px;/*
+    	white-space:nowrap; 
+    	overflow:hidden; */
+    	text-overflow:ellipsis;
+	}
+	.box>div.nav .navR a{
+	    color: #f0871a;
+	}
+	.con ul.yuanW li h2{
+		font-size: 16px;
+		font-weight: bold;
+		padding-left: 16px;
+	}
+	.yuanW .text{
+		margin: 0 auto;
+		color: #797979;
+		line-height: 20px;
+		text-align: center;
+	}
+	.yuanW .text>div{
+		margin-top: 10px;
+		padding: 2rem 0px;
+		margin: 10px auto;
+		padding: 1rem 3px;
+		border-top: 1px solid #e5e5e5;
+		border-bottom: 1px solid #e5e5e5;
+		text-align: center;
+		line-height: 22px;
+	}
+	.yuanW .text>div p span{
+		color: #f0871a;
+	}
+	.yuanW .text button{
+		width: 92%;
+		line-height: 48px;
+		border-radius: 6px;
+		background: #f0871a;
+		color: #fff;
+		text-align: center;
+		border: none;
+		font-family: Arial,"Microsoft Yahei";
+		font-size: 16px;
+		margin-top: 20px;
+	}
+</style>
+<body>
+	<div class="box" style="padding:0px;height:100px;">
+		<!--导航-->
+		<div class="nav">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<img src="img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">在线客服</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<!---年检列表---->
+		<div class="con">
+			<div class="nianjianB">
+				<img src="img/xuyuan2.jpg" />
+			</div>
+			<ul class="yuanW">
+				
+				<div class="text">
+					<div>
+						<P>好友使用你的分享链接下载并注册，对方可得<span>30元</span>优惠券。</P>
+						<p>好友完成首个订单后，你亦可以的<span>30元</span>优惠券。</p>
+					</div>
+					<button>邀请好友，各得30元优惠券</button>
+				</div>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function (){
+			/***在线客服显示隐藏动态控制***/
+			$("#kefu").click(function (event){
+				$("#zaiX").fadeIn();
+				event.stopPropagation();
+			});
+			$(document).click(function (){
+				$("#zaiX").fadeOut();
+			});
+		});
+		
+	</script>
+</body>
+</html>

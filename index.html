@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>车务360</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<body>
+	<div class="box" style="padding:0px;height:100px;">
+		<!--导航-->
+		<div class="nav">
+			<div class="navL">
+				<img src="img/dingWei.png" />
+				北京
+			</div>
+			<div class="navR">
+				<img src="img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">在线客服</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<!---年检列表---->
+		<div class="con">
+			<div class="nianjianB">
+				<img src="img/nianjian.jpg" />
+			</div>
+			<ul class="yancheU">
+				<li>
+					<div class="ulL">
+						<div>
+							<img src="img/yanche1.png"/>
+							<div class="ulL_H">
+								<h2>年检验车</h2>
+								<span class="zhaungT">热门</span>
+								<span>快速预约、上门取送、￥99起</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ulL">
+						<div>
+							<img src="img/daiban.png"/>
+							<div class="ulL_H">
+								<h2>车务代办</h2>
+								<span class="zhaungT">推荐</span>
+								<span>车务手续、专业代办、全部￥99起</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ulL ulL_4">
+						<div>
+							<img src="img/duoguan.png"/>
+							<div class="ulL_H">
+								<h2>事故托管</h2>
+								<span>快速响应、免费资讯、全面代理</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ulL ulL_4">
+						<div>
+							<img src="img/weizhang.png"/>
+							<div class="ulL_H">
+								<h2 class="weizhang">违章查询</h2>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+    
+	<script type="text/javascript">
+		$(function (){
+			/***在线客服显示隐藏动态控制***/
+			$("#kefu").click(function (event){
+				$("#zaiX").fadeIn();
+				event.stopPropagation();
+			});
+			$(document).click(function (){
+				$("#zaiX").fadeOut();
+			});
+		});
+	</script>
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>我要代办__车身颜色变更</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/daiban.css">
+<!-- 下拉框css样式 -->
+<link rel="stylesheet" type="text/css" href="css/divselect.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript" src="js/divselect.js"></script>
+<body>
+	<div class="box">
+		<!--导航-->
+		<div class="nav">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<img src="img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">在线客服</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<!---年检列表---->
+		<div class="con dingDanTi">
+			<ul class="biangeng">
+				<li>
+					<span class="left">车牌号</span>
+					<span class="right">
+						<input type="text" name="country" value="" placeholder="请输入车牌号" />
+					</span>
+				</li>
+				<li>
+					<span class="left">发动机号</span>
+					<span class="right">
+						<input type="text" name="country" value="" placeholder="请输入发动机号" />
+					</span>
+				</li>
+			</ul>
+		</div>
+		<div class="shigu_con biangengCon">
+			<div>车主省份证：</div>
+			<ul>
+				<li>
+					<div class="FnfDa">
+						<img src="img/chuan.jpg"/>
+					</div>
+					正面
+				</li>
+				<li>
+					<div class="FnfDa">
+						<img src="img/chuan.jpg"/>
+					</div>
+					反面
+				</li>
+			</ul>
+		</div>
+		<div class="shigu_con biangengCon">
+			<div>行驶证：</div>
+			<ul>
+				<li>
+					<div class="FnfDa">
+						<img src="img/chuan.jpg"/>
+					</div>
+					正面
+				</li>
+				<li>
+					<div class="FnfDa">
+						<img src="img/chuan.jpg"/>
+					</div>
+					反面
+				</li>
+			</ul>
+		</div>
+		<div class="shigu_con biangengCon">
+			<div>备注：</div>
+			<textarea placeholder="请输入您的备注信息"></textarea>
+		</div>
+		<div class="datuShow">
+			<span class="left">返回</span>
+			<span class="right">删除</span>
+			<div><img src="img/nianjian2.jpg"/></div>
+		</div>
+	</div>
+	<div class="But But1">
+		<button>提交</button>
+	</div>
+	<script type="text/javascript" src="js/fangda.js"></script>
+	<!-- 下拉框样式控制 -->
+	<script type="text/javascript">
+		/***下拉框样式动态显示***/
+		$(function(){
+		  	$.divselect("#divselect","#inputselect");
+		  	$.divselect1("#divselect1","#inputselect1");
+		});
+		
+	</script>
+</body>
+</html>

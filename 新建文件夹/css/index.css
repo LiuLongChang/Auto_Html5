@@ -1,0 +1,753 @@
+body{
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin:0px;
+	min-width: 320px;
+	min-height: 480px;
+	position: relative;
+	font-family:Arial,"Microsoft Yahei";
+}
+/***===============登陆样式开始===============***/
+	/***log样式***/
+	.log,.log>div.logL{
+		width: 100%;
+	}
+	.log>div.logL{
+		text-align: center;
+		font-size: 20px;
+		color: #585858;
+	}
+	.log>div.logL img{
+		width: 50%;
+		margin: 10% 0px 10px 0px;
+	}
+
+	/***表单样式***/
+	.log>div.form{
+		width: 92%;
+		margin: 0 auto;
+	}
+	.log>div.form .form_box{
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		border: 1px solid #bfbfbf;
+		border-radius: 10px;
+		margin-top: 12%;
+	}
+	.log>div.form .yanzheng{
+		width: 106px;
+		height: 56px;
+		background: #e5e5e5;
+		color: #9a9a9a;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		border-radius: 0px 10px 0px 0px;
+		line-height: 56px;
+		text-align: center;
+		font-size: 14px;
+	}
+	.log>div.form input{
+		width: 68%;
+		border: none;
+		padding: 16px 16% 10px 16%;
+		height: 30px;
+		color: #bfbfbf;
+		font-size: 16px;
+		line-height: 22px;
+		font-family:Arial,"Microsoft Yahei";
+	}
+	.log>div.form input.number{
+		background: url("../img/logNumber.png") 15px 15px no-repeat;
+    	background-size: 18px 30px;
+    	border-bottom: 1px solid #bfbfbf;
+	}
+	.log>div.form input.authCode{
+		background: url("../img/logPassword.png") 15px 18px no-repeat;
+    	background-size: 20px 22px;
+	}
+	.log>div.form .logD{
+		width: 100%;
+		height: 45px;
+		text-align: center;
+		line-height: 45px;
+		color: #fff;
+		background: #f0871a;
+		margin-top: 12%;
+		font-size: 16px;
+		border-radius: 6px;
+	}
+/***===============登陆样式结束===============***/
+
+
+
+
+/***===============首页样式开始===============***/
+	.box{
+		/*height: 100%;*/
+		padding-bottom: 100px;
+	}
+	.box,.box>div{
+		width: 100%;
+	}
+	.box>div.nav img{
+		width: 32%;
+		margin-right: 2px;
+	}
+	.box>div.nav .navL{
+		width: 71px;
+		position: absolute;
+		left: 8px;
+		color: #9a9a9a;
+		font-size: 16px;
+		z-index: 6;
+		top: 14px;
+	}
+	.box>div.nav .navR{
+		width: 30px;
+		position: absolute;
+		right: 8px;
+		z-index: 10;
+		top: 10px;
+	}
+	.box>div.nav .navR img{
+		width: 100%;
+	}
+	.box>div.nav .navC{
+		text-align: center;
+		position: relative;
+    	z-index: 2;
+    	top: -8px;
+	}
+	.box>div.nav .navC img{
+		width: 103px;
+	}
+	/***在线客服样式***/
+	#zaiX{
+		position: absolute;
+		top: 46px;
+		right: 3px;
+		width: 102px;
+		display: none;
+		z-index: 10;
+		background: #fff;
+	}
+	#zaiX img{
+		width: 14px;
+		position: absolute;
+		top: -3%;
+		right: 13px;
+	}
+	#zaiX ul{
+		width: 100px;
+		height: 94px;
+		border: 1px solid #c5c5c5;
+		font-size: 14px;
+		color: #797979;
+		text-align: center;
+	}
+	#zaiX ul li{
+		line-height: 46px;
+	}
+	#zaiX ul li.xian{
+		border-bottom: 1px solid #c5c5c5;
+	}
+	/***年检列表样式***/
+	.con{
+		width: 100%;
+		position: relative;
+		top: -42px;
+		float: left;
+	}
+	.con .nianjianB img,.con ul{
+		width: 100%;
+	}
+	.con ul li{
+		border-bottom: 10px;
+	}
+	.con ul.yancheU li div{
+		width: 100%;
+		background: #fff;
+		margin-bottom: 10px;
+		font-size: 12px;
+		color: #d2d2d2;
+		padding: 10px 0px 6px 0px;
+		text-align: center;
+		line-height: 20px;
+	}
+	.con ul.yancheU li div img{
+		width: 40px;
+    	margin-bottom: 10px;
+	}
+	.con ul.yancheU li div .hei{
+		font-size: 18px;
+		color: #585858;
+		font-weight: bold;
+	}
+	/*.con ul li div.ulL{
+		width: 75%;
+		float: left;
+		background: url("../img/yancheB1.jpg") 0 0 no-repeat;
+		background-size: 100% 100%;
+		height: 100%;
+		padding: 25px 0px 25px 0px;
+	}
+	.con ul li div.ulL_4{
+		background: url("../img/yancheB.jpg") 0 0 no-repeat;
+		background-size: 100% 100%;
+	}
+	.con ul div.ulL>div{
+		width: 82%;
+    	margin: 0 auto;
+	}
+	.con ul div.ulL img{
+		width: 18%;
+		float: left;
+	}
+	.con ul div.ulL .ulL_H{
+		float: left;
+		font-size: 20px;
+		margin:0px 0px 6px 12%;
+	}
+	.con ul div.ulL .ulL_H h2{
+		float: left;
+		font-size: 22px;
+		color: #585858;
+	}
+	.con ul div.ulL .ulL_H img{
+		width: 35px;
+		margin-top: -6px;
+		margin-left: 12px;
+	}
+	.con ul div.ulL .ulL_J{
+		float: left;
+		font-size: 12px;
+		color: #cfcfcf;
+		margin-left: 16%;
+	}
+	.con ul li div.ulR{
+		float: left;
+		width: 25%;
+		text-align: center;
+		line-height: 90px;
+		height: 100%;
+	}
+	.con ul li div.ulR img{
+		width: 55%;
+	}
+	.con ul div.ulL img.Ruan{
+		width: 14px;
+		float: right;
+		margin:-16px -2px 0px 0px;
+	}
+.con .yancheU li{
+		height: 82px;
+		overflow: hidden;
+		margin-bottom: 12px;
+	}*/
+	
+
+/***==================所需材料样式===================***/
+
+	.box>div.nav img.fanhui{
+		width: 16%;
+	}
+	ul.condition,ul.condition li{
+		width: 100%;
+	}
+	ul.condition li{
+		height: 50px;
+		line-height: 50px;
+		float: left;
+		border-bottom: 1px solid #c6c6c6;
+	}
+	ul.condition li .pitchBut{
+		width: 20px;
+		height: 20px;
+		background: url("../img/xuanzhong1.jpg") 0 0 no-repeat;
+		background-size: 100% 100%;
+		float: left;
+		margin: 13px 0px 0px 4%;
+	}
+	ul.condition li.xuanzhongLT{
+		border-top: 1px solid #c6c6c6;
+	}
+	ul.condition li div{
+		width: 70%;
+		margin:0 auto;
+		font-size: 16px;
+	}
+	ul.condition li div .pitchB{
+		float: left;
+		font-weight: bold;
+	}
+	ul.condition li div .pitchB1{
+		float: right;
+		color: #797979;
+	}
+	ul.condition li div .pitchB1Img{
+		width: 18px;
+		height: 8px;
+		background: url("../img/zhuX.png") 0 0 no-repeat;
+		background-size: 100% 100%;
+		margin: 19px -25px 0px 10px;
+	}
+	/***li选中样式***/
+	ul.condition li.xuanzhongL{
+		background: #f6f6f6;
+	}
+	ul.condition li.xuanzhongL .pitchBut{
+		background: url("../img/xuanzhong.jpg") 0 0 no-repeat;
+		background-size: 100% 100%;
+	}
+	ul.condition li.xuanzhongLB .pitchBut{
+		background: url("../img/xuanzhong.jpg") 0 0 no-repeat;
+		background-size: 100% 100%;
+	}
+	/***所需条件样式***/
+	.cuoXu{
+		width: 100%;
+		margin:0 auto;
+		padding-bottom: 38px;
+	}
+	.cuoXu div.cuoXuL{
+		width: 100%;
+		height: 30px;
+		line-height: 30px;
+		margin-bottom: 20px;
+		float: left;
+	}
+	.cuoXu div.cuoXuL span{
+		display: inline-block;
+		width: 32%;
+		text-align: center;
+		line-height: 30px;
+		font-size: 16px;
+	}
+	.cuoXu div.cuoXuL span.cuoXuLSpan{
+		color: #f0871a;
+		border-bottom: 2px solid #f0871a;
+	}
+	.cuoXu div.cuoXuCon{
+		width: 92%;
+		margin:0 auto;
+		margin-top: 12px;
+	}
+	.cuoXu div.cuoXuCon ul{
+		margin-bottom: 40px;
+		display: none;
+	}
+	.cuoXu div.cuoXuCon ul.Show{
+		display: block;
+	}
+	.cuoXu div.cuoXuCon ul li{
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 3%;
+	}
+	.cuoXu div.cuoXuCon ul li img{
+		float: left;
+		width: 64px;
+	}
+	.cuoXu div.cuoXuCon ul li div{
+		float: left;
+		margin-left: 6%;
+		width: 71%;/*
+		border-bottom: 1px solid #b6b6b6;
+		margin-top: 27px;*/
+		padding-bottom: 8px;
+		line-height: 20px;
+	}
+	.cuoXu div.cuoXuCon ul li div.liucheng{
+		border: 0px;
+		margin-top:0px;
+		padding:0px;
+		line-height: 13px;
+	}
+	.cuoXu div.cuoXuCon ul li  div span{
+		float: left;
+		font-size: 14px;
+		margin-right: 6%;
+		/*font-weight: bold;*/
+	}
+	.cuoXu div.cuoXuCon ul li div.liucheng span{
+		font-size: 12px;
+		/*color: #606060;*/
+	}
+	.cuoXu div.cuoXuCon ul li  div span.spanImg,
+	.dingXiang ul li .spanImg{
+		width: 20px;
+		height: 20px;
+		border-radius: 10px;
+		background: #f0871a;
+		color: #fff;
+		line-height: 20px;
+		text-align: center;
+	}
+	.cuoXu div.cuoXuCon ul li  div span.spanHong{
+		color: #f0871a;
+		font-size: 15px;
+		display: inline-block;
+    	margin-bottom: 6px;
+	}
+	/***低端提交样式***/
+	.bot{
+		width: 100%;
+		margin:0 auto;
+		border-top: 1px solid #b6b6b6;
+		position: fixed;
+		bottom: 0px;
+		background: #fff;
+	}
+	.bot div{
+		float: left;
+		font-size: 16px;
+		/*font-weight: bold;*/
+		margin: 14px 0px 8px 8px;
+	}
+	.bot div span.Hong{
+		color: #f0871a;
+	}
+	.bot div span.Xiao{
+		font-size: 12px;
+	}
+	.bot div img.hui{
+		width: 200px;
+	}
+	.bot button{
+		width: 28%;
+		height: 40px;
+		line-height: 40px;
+		color: #fff;
+		background: #f0871a;
+		border-radius: 6px;
+		border: none;
+		float: right;
+		margin: 8px 8px 8px 0px;
+		font-family: Arial,"Microsoft Yahei";
+	}
+
+	/***提交订单样式***/
+	.dingDanTi{
+		width: 100%;
+		background: #eaeaea;
+		padding-top: 10px;
+	}
+	.dingDanTi ul{
+		width: 96%;
+		margin:0 auto;
+		overflow: hidden;
+		background: #fff;
+		border-left: 1px solid #e0dfdf;
+		border-right: 1px solid #e0dfdf;
+	}
+	.dingDanTi ul li {
+	    width: 94%;
+	    padding: 0px 4% 0px 2%;
+	    background: url("../img/LeftBin.png") 96% 15px no-repeat;
+	    background-size: 12px 20px;
+	    font-size: 16px;
+	    border-bottom: 1px dotted #cdcdcd;
+	    height: 50px;
+	    line-height: 50px;
+	}
+
+	.dingDanTi ul li .left{
+		float: left;
+		color: #434343;
+		margin-left: 3%;
+	}
+	.dingDanTi ul li .right{
+		width: 58%;
+		float: right;
+		color: #797979;
+		margin-right: 28px;
+		text-align: right;
+	}
+	.dingDanTi ul li .right input{
+		width: 100%;
+		border: none;
+		/*text-align: right;*/
+		font-family: Arial,"Microsoft Yahei";
+		font-size: 15px;
+		color: #797979;
+		text-overflow: ellipsis; 
+		background: none;
+	}
+	.dingDanTi ul li .widt1{
+		width: 48px;
+	}
+	.dingDanTi ul li .widt2{
+		width: 92px;
+	}
+	.dingDanTi ul li .widt3{
+		width: 62px;
+	}
+	.dingDanTi ul li .widt4{
+		width: 158px;
+	}
+	.dingDanTi ul li.H2{
+		font-size: 16px;
+		background: none;
+	}
+	.dingDanTi ul li.H2 .right{
+		margin-right:0px;
+	}
+	.dingDanTi ul li.H2 .left {
+	    background: url("../img/yanche1.png") 0 8px no-repeat;
+	    background-size: 28px 25px;
+	    padding-left: 40px;
+	}
+	.beizhu2{
+		width: 96%;
+		margin:0 auto;
+	}
+	.beizhu2 img{
+		width: 100%;
+	}
+
+	/***订单确认样式***/
+	ul.condition li div .hoang{
+		color: #f0871a;
+	}
+	.queRenD ul li{
+		background: none;
+	}
+	.queRenD ul li .right{
+		margin-right: 0px;
+	}
+	ul.queRenDU li div{
+		width: 100%;
+		color: #434343;
+	}
+	ul.queRenDU li div.pitchButI{
+		position: relative;
+		width: 82%;
+	}
+	ul.queRenDU li div.pitchButI img{
+		position: absolute;
+	    width: 10px;
+	    right: -28px;
+	    top: 15px;
+	    z-index: 6;
+	}
+	ul.queRenDU li div span{
+		margin-left: 10px;
+	}
+	ul.queRenDU li div span.hui{
+		margin: 0px;
+		font-size: 12px;
+		color: #b6b6b6;
+	}
+	.dingDanTi ul li.ziqu{
+		line-height: 33px;
+	}
+	.dingDanTi ul li.ziqu div img{
+		width: 85%;
+	    float: left;
+	    margin-left: 14%;
+	}
+	.dingDanTi ul li.fapiao{
+		height: 100px;
+    	line-height: 47px;
+	}
+	.dingDanTi ul li.fapiao input{
+	    float: left;
+	    height: 30px;
+	    width: 83%;
+	    padding-left: 2%;
+	    font-family: Arial,"Microsoft Yahei";
+	    margin: -8px 0px 0px 14%;
+	}
+	.dItuB{
+		width: 97%;
+	    margin: 0 auto;
+	    display: block;
+	    margin-top: -2px;
+	}
+
+	.botZ div {
+	    margin: 22px 0px 8px 24px;
+	    width: 60%;
+	}
+	.botZ div .Left{
+		margin-left: 15%;
+	}
+
+	/***订单确认样式***/
+	.dingDanQue{
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		background: rgba(000,000,000,0.5);
+		z-index: 2;
+		display: none;
+	}
+	.dingDanQue_box{
+		width: 100%;
+		height: 205px;
+		background: #fff;
+		position: absolute;
+    	bottom: 0px;
+	}
+	.dingDanQue_box>div{
+		width: 80%;
+		margin:0 auto;
+		text-align: center;
+		font-size: 17px;
+	}
+	.dingDanQue_box>div h2{
+		color: #f0871a;
+		width: 100%;
+		border-bottom: 1px solid #b6b6b6;
+	    line-height: 30px;
+	    margin:20px 0px 20px 0px;
+	}
+	.dingDanQue_box>div>div{
+		float: left;
+		width: 30%;
+		font-size: 15px;
+	}
+	.dingDanQue_box>div>div img{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.dingDanQue_box>div>div.right{
+		float: right;
+	}
+
+	/***城市样式***/
+	.chengshi ul{
+		width: 100%;
+		border: none;
+	}
+	.chengshi ul li>div.navL img{
+		width: 20px;
+		margin: -3px 4px 0px 8px;
+	}
+	
+	.chengshi ul li>span.left,
+	.chengshi ul li>div.navL{
+		color: #000;
+	}
+	.chengshi ul li,.chengshi ul li>span.hui{
+		color: #9a9a9a;
+	}
+	.chengshi ul li .right{
+		background: url("../img/xin.png") 42% 14px no-repeat;
+		background-size: 20px 20px;
+	}
+	/***支付成功样式***/
+	.box div.zhifuChenggong{
+		width: 92%;
+		margin:0 auto;
+		margin-top: 10%;
+	}
+	.zhifuChenggong button{
+		width: 100%;
+		height: 45px;
+		line-height: 45px;
+		text-align: center;
+		font-size: 16px;
+		background: none;
+		border: 1px solid #f0871a;
+		color: #f0871a;
+		border-radius: 5px;
+		margin-bottom: 10px;
+		font-family: Arial,"Microsoft Yahei";
+	}
+	.zhifuChenggong button.dingdan{
+		color: #fff;
+		background: #f0871a;
+		border: none;
+	}
+	.dingDanTi ul li.zongji .left{
+		color: #000;
+		font-size: 17px;
+		margin-right: 6px;
+	}
+	.dingDanTi ul li.zongji .hong{
+		color: #f0871a;
+		font-size: 17px;
+	}
+	.dingDanTi h2{
+		width: 100%;
+		height: 100px;
+		background: url("../img/zhifuC.jpg") 0 0 no-repeat;
+		background-size: 100% 100%;
+		line-height: 130px;
+	    text-align: center;
+	    color: #fff;
+	    font-size: 18px;
+	}
+	/***订单详情样式***/
+	.dingDanTi ul li.small{
+		font-size: 12px;
+		border: none;
+		height: 30px;
+		line-height: 30px;
+	}
+	.dingDanTi ul li.big{
+		font-size: 17px;
+		font-weight: bold;
+	}
+	.dingDanTi ul li.big .right{
+		color: #f0871a;
+	}
+	.zhuangtai{
+		width: 100%;
+		margin:0 auto;
+		background: #fff;
+		margin-top: 20px;
+		bottom: 0px;
+		padding: 20px 0px 2px 0px;
+		overflow: hidden;
+		text-align: center;
+	}
+	.zhuangtai button{
+		width: 92%;
+		height: 45px;
+		line-height: 45px;
+		text-align: center;
+		border: none;
+		color: #f0871a;
+		border: 1px solid #f0871a;
+		border-radius: 5px;
+		background: #fff;
+		margin:0px 8px 20px 8px;
+		font-family: Arial,"Microsoft Yahei";
+	}
+	.zhuangtai button.right{
+		border: none;
+		color: #fff;
+		background: #f0871a;
+	}
+
+	/***订单提交中样式***/
+	.DingTi{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		background: rgba(000,000,000,0.5);
+		top: 0px;
+		left: 0px;
+		z-index: 10;
+		display: none;
+	}
+	.DingTi>div{
+		width: 80%;
+		text-align: center;
+		padding: 20% 0 20% 0px;
+		font-size: 16px;
+		margin:0 auto;
+		background: #fff;
+		border-radius: 6px;
+		margin-top: 45%;
+	}
+	input::-webkit-input-placeholder {
+		color: #e5e5e5;
+	}

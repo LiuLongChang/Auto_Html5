@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<title>寻找车务君</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<style type="text/css">
+	.con{
+		color: #53457f;
+		font-size: 0.8rem;
+	}
+	.leixing{
+		width: 100%;
+		border-top: 1px solid #dedede;
+		border-bottom: 1px solid #dedede;
+		margin-top: 1rem;
+	}
+	.tong>div{
+		width: 88%;
+		margin: 0 auto;
+		line-height: 2.6rem;
+	}
+	.leixing>div>div{
+		display: inline-block;
+	}
+	
+	.leixing span{
+		margin-right: 2rem;
+	}
+	.leixing>div>div span{
+		display: inline-block;
+		padding-left: 1.6rem;
+		background: url("img/xuanZB.png") 0 10px no-repeat;
+		background-size: 18px 18px;
+	}
+	.leixing>div>div span.xuan{
+		background: url("img/xuanZB1.png") 0 10px no-repeat;
+		background-size: 18px 18px;
+	}
+	.nome input{
+		border: 1px solid #dedede;
+	    background: none;
+	    line-height: 32px;
+	    margin-left: 2%;
+	    width: 73%;
+	    display: inline-block;
+	    padding-left: 3%;
+	}
+	.nome>div{
+		line-height: 4rem;
+	}
+	.Liyou {
+	    background: #fff;
+	    position: absolute;
+	    top: 88px;
+	    right: 18px;
+	    text-align: center;
+	    display: none;
+	}
+	.Liyou span {
+	    display: block;
+	    width: 88%;
+	    line-height: 45px;
+	    color: #797979;
+	    font-size: 14px;
+	    background: #fff;
+	    border: 1px solid #dedede;
+	    padding-left: 6%;
+	    padding-right: 6%;
+	}
+	.quyu{
+		border-top: 1px solid #dedede;
+		border-bottom:  1px solid #dedede;
+		position: relative;
+		padding-bottom: 6px;
+	}
+	.quyu h2{
+		font-size: 1rem; 
+	}
+	.quyu>div .text{
+		padding-left: 2%;
+		width: 98%;
+		background: url("img/xuazB.png") 96% 14px no-repeat;
+		background-size: 18px 8px;
+		border: 1px solid #dedede;
+		line-height: 35px;
+		margin: 0.6rem 0px;
+	}
+	.Liyou_pu{
+		top: 134px;
+	}
+
+	.shouji>div input{
+		width: 96%;
+		padding-left: 2%;
+		line-height: 30px;
+		border: 1px solid #dedede;
+	}
+	.shouji>div.phone input{
+		width: 65%;
+		padding-left: 2%;
+    	line-height: 30px;
+    	font-family: Arial,"Microsoft Yahei";
+    	margin-bottom: 0.6rem;
+		border: 1px solid #dedede;
+	}
+	.shouji .phone button{
+		width: 29%;
+	    margin-left: 1%;
+	    border: none;
+	    background: #dedede;
+	    color: #797979;
+	    text-align: center;
+	    line-height: 34px;
+		border-radius: 3px;
+	    font-family: Arial,"Microsoft Yahei";
+	}
+	.shouji input:-webkit-input-placeholder{
+		color: #dedede;
+	}
+	.tijiao{
+		display: block;
+		width: 92%;
+		line-height: 48px;
+		border: none;
+		border-radius: 6px;
+		color: #fff;
+		margin: 20px auto;
+		background: #3b2a6c;
+	    font-family: Arial,"Microsoft Yahei";
+	}
+	
+</style>
+<body>
+	<div id="ceshi">
+		<div class=""></div>
+	</div>
+	<div class="box" style="padding:0px;height:100px;">
+		<!--导航-->
+		<div class="nav">
+			<div class="navL">
+				<img src="img/dingWei.png" />
+				北京
+			</div>
+			<div class="navR">
+				<img src="img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">在线客服</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<!---年检列表---->
+		<div class="con">
+			<div class="nianjianB" style="text-align: center;">
+				<img src="img/houdong.jpg" />
+				<img src="img/xunzhao_jieshao.jpg" style="margin:1rem 0px;" />
+				<img src="img/xunzhao.png" style="width:90%;"/>
+			</div>
+			<div class="leixing tong">
+				<div>
+					<span>类型</span>
+					<div>
+						<span class="xuan">个人</span>
+						<span>机构</span>
+					</div>
+				</div>
+			</div>
+			<div class="nome tong">
+				<div>
+					<span>名称/姓名</span>
+					<input type="text" value="" />
+				</div>
+			</div>
+			<div class="quyu tong">
+				<div>
+					<h2>您提供服务的区域</h2>
+					<div class="text">北京</div>
+					<div class="Liyou">
+						<span>上海</span>
+						<span>订单没有完成</span>
+						<span>取消订单</span>
+					</div>
+				</div>
+				<div>
+					<div class="text">请选择区/县</div>
+					<div class="Liyou Liyou_pu">
+						<span>朝阳区</span>
+						<span>海淀区</span>
+						<span>西城区</span>
+					</div>
+				</div>
+			</div>
+			<div class="shouji tong">
+				<div class="phone">
+					<h2>您提供服务的区域</h2>
+					<input type="text" value="" placeholder="请输入11位手机号" />
+					<button>发送验证码</button>
+				</div>
+				<div>
+					<input type="text" value="" placeholder="请输入短信验证" />
+				</div>
+			</div>
+		</div>
+		<button class="tijiao">提交报名</button>
+	</div>
+	<script type="text/javascript">
+		$(function (){
+			/***在线客服显示隐藏动态控制***/
+			$("#kefu").click(function (event){
+				$("#zaiX").fadeIn();
+				event.stopPropagation();
+			});
+			$(document).click(function (){
+				$("#zaiX").fadeOut();
+			});
+
+			$(".leixing>div>div span").click(function (){
+				$(this).addClass("xuan ").siblings().removeClass("xuan ");
+			});
+
+			/***动态选择退款理由***/
+			$(".quyu>div .text").click(function (){
+				var dingXiang = $(this).next(".Liyou");
+				if(dingXiang.css("display")=="none"){
+					dingXiang.slideDown();
+					//$(".dingXiang .Liyou").slideDown();
+				}else{
+					dingXiang.slideUp();
+				}
+			});
+			$(".Liyou span").click(function(){
+				var SpanV = $(this).text();
+				$(this).parent().prev().text(SpanV);
+				$(this).parent().slideUp();
+			});
+
+
+
+		});
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>我的订单_已完成_评价</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/daiban.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<body>
+	<div class="box" style="padding-bottom:0px;height:100%;">
+		<!--导航-->
+		<div class="nav" style="background:#fff;">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<img src="img/keFu.png" id="kefu" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div id="zaiX">
+			<img src="img/zaiXt.png"/>
+			<ul>
+				<li class="xian">在线客服</li>
+				<li>一键呼叫</li>
+			</ul>
+		</div>
+		<div class="con dingDanTi queRenD dingZhuang">
+			<div class="yunDan yunDan1">
+				<img src="img/nianjianB.png" />
+				<span class="left">年审换证</span>
+				<span class="right">￥99</span>
+			</div>
+			<div style="background:#eaeaea;height:10px;"></div>
+			<div class="pingjia">
+				<div>
+					<span>司机态度</span>
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div>
+					<span>服务态度</span>
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<textarea placeholder="请写下您的评价或感受吧，感谢您的合作，期待 再次为您服务！"  class="Xieping"></textarea>
+			</div>
+		</div>
+		<div class="But" style="display:block;">
+			<button>发表评价</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		/***在线客服显示隐藏动态控制***/
+		$("#kefu").click(function (event){
+			$("#zaiX").fadeIn();
+			event.stopPropagation();
+		});
+		$(document).click(function (){
+			$("#zaiX").fadeOut();
+		});
+
+		$(".pingjia>div>div span").click(function (){
+			$(this).addClass("hong");
+			$(this).prevAll().addClass("hong");
+			$(this)
+		});
+
+	</script>
+</body>
+</html>

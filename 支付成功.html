@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>支付成功</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<body>
+	<div class="box" style="padding:0px;">
+		<!--导航-->
+		<div class="nav">
+			
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div class="con dingDanTi queRenD" style="background:#fff;">
+			<h2>
+				支付成功
+			</h2>
+			<ul>
+				<li class="H2">
+					<span class="left">服务项目</span>
+					<span class="right">年检验车</span>
+				</li>
+				<li>
+					<span class="left">订单号</span>
+					<span class="right">
+						<input type="text" disabled="disabled" name="country" value="23781289471928" />
+					</span>
+				</li>
+				<li>
+					<span class="left">姓名</span>
+					<span class="right">
+						<input type="text" disabled="disabled" name="country" value="加多宝" />
+					</span>
+				</li>
+				<li>
+					<span class="left">联系电话</span>
+					<span class="right">
+						<input type="text" disabled="disabled" name="country" value="1380013800" />
+					</span>
+				</li>
+				<li>
+					<span class="left">地址</span>
+					<span class="right">
+						<input type="text" disabled="disabled" name="country" value="朝阳区东八里庄远洋天地社区6号楼1708" />
+					</span>
+				</li>
+				<li class="zongji">
+					<span class="left">总计</span>
+					<span class="hong">
+						￥49
+					</span>
+				</li>
+			</ul>
+			<img src="img/dItuB.png" class="dItuB">
+			<div class="zhifuChenggong">
+				<button>订单详情</button>
+				<button>返回首页</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(".zhifuChenggong button").click(function (){
+			$(this).addClass("dingdan").siblings().removeClass("dingdan");
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>优惠券操作</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/daiban.css">
+<!-- 下拉框css样式 -->
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<body>
+	<div class="box" style="padding-bottom:0px;">
+		<!--导航-->
+		<div class="nav">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<img src="img/youhui.png" id="kefu" style="width:20px;" />
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<div class="con youhui">
+			<ul class="condition1">
+				<li>
+					<div>
+						<div class="left">
+							<span></span>
+						</div>
+						<div class="right">
+							<div class="top">
+								<div class="left">
+									<span class="da">￥50</span><br>
+									<span>新手优惠券</span>
+								</div>
+								<div class="right">
+									<span class="da">验车专用</span><br>
+									<span>APP下单使用，在线支付专享</span>
+								</div>
+							</div>
+							<div class="boT">
+								<span class="left">使用期限:2015-12-12-2016-6-30</span>
+								<span class="right">未使用</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div class="left">
+							<span></span>
+						</div>
+						<div class="right">
+							<div class="top">
+								<div class="left">
+									<span class="da">￥50</span><br>
+									<span>滴滴优惠券</span>
+								</div>
+								<div class="right">
+									<span class="da">嘀嘀打车专用</span><br>
+									<span>嘀嘀打车满200使用</span>
+								</div>
+							</div>
+							<div class="boT">
+								<span class="left">使用期限:2015-12-12-2016-6-30</span>
+								<span class="right">未使用</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div class="left">
+							<span></span>
+						</div>
+						<div class="right">
+							<div class="top topH">
+								<div class="left">
+									<span class="da">￥50</span><br>
+									<span>滴滴优惠券</span>
+								</div>
+								<div class="right">
+									<span class="da">验车专用</span><br>
+									<span>APP下单使用，在线支付专享</span>
+								</div>
+							</div>
+							<div class="boT">
+								<span class="left">使用期限:2015-12-12-2016-6-30</span>
+								<span class="right">未使用</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div class="left">
+							<span></span>
+						</div>
+						<div class="right">
+							<div class="top topH">
+								<div class="left">
+									<span class="da">￥50</span><br>
+									<span>滴滴优惠券</span>
+								</div>
+								<div class="right">
+									<span class="da">验车专用</span><br>
+									<span>APP下单使用，在线支付专享</span>
+								</div>
+							</div>
+							<div class="boT">
+								<span class="left">使用期限:2015-12-12-2016-6-30</span>
+								<span class="right">未使用</span>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="But">
+			<button>删除</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function (){
+			/***动态选择删除优惠模块***/
+			$("#kefu").click(function (){
+				if (!$("ul.condition1 li").hasClass('show')) {
+					$("ul.condition1 li").addClass("show");
+					$("ul.condition1 li").click(function (){
+						if (!$(this).hasClass('xuanzhongLB')) {
+							$(this).addClass("xuanzhongLB");
+						}else {
+							$(this).removeClass("xuanzhongLB");
+						}
+					});
+				}else{
+					$("ul.condition1 li.xuanzhongLB").remove();
+				};
+			});
+		});
+	</script>
+</body>
+</html>

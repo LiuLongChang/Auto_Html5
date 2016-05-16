@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<title>我要代办_驾照年审_time</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/daiban.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<style type="text/css">
+	.zhuangTai{
+		width: 46%;
+	    float: right;
+	    font-size: 12px;
+	    color: #797979;
+	    line-height: 30px;
+	    margin-top: 10px;
+	}
+	.zhuangTai img{
+		width: 30px;
+	}
+	.Time{
+		width: 100%;
+		overflow: hidden;
+	}
+	.Time .Years{
+		width: 100%;
+		color:#f0871a;
+	}
+	.Time .Years>span{
+		display: inline-block;
+		width: 49.5%;
+		text-align: center;
+		line-height: 50px;
+		font-size: 16px;
+	}
+	.Time .dayC{
+		height: 75px;
+		overflow: hidden;
+	}
+	.Time .day{
+		width: 100%;
+		height: 85px;
+		border-top: 1px solid #b6b6b6;
+    	overflow-x: scroll;
+	}
+	.Time .day ul{
+		float: left;
+		width: 660px;
+		margin-left: 4%;
+	}
+	.Time .day ul li{
+		float: left;
+		width: 64px;
+		text-align: center;
+		line-height: 20px;
+		padding: 10px 0px 10px 0px;
+		color: #797979;
+		font-size: 14px;
+    	margin-top: 10px;
+	}
+	.Time .day ul li.Hong{
+		background:#f0871a;
+		border-radius: 12px;
+		color: #fff;
+	}
+	.Time .day ul li .year{
+		display: none;
+	}
+	.gridU{
+		width: 100%;
+		overflow: hidden;
+		border-top: 1px solid #b6b6b6;
+		border-bottom: 1px solid #b6b6b6;
+		margin-top: 12px;
+	}
+	.gridU li{
+		float: left;
+		width: 33.12%;
+		height: 48px;
+		line-height: 48px;
+		text-align: center;
+		color: #797979;
+		position: relative;
+	}
+	.gridU li img{
+		position: absolute;
+		display: none;
+		width: 20px;
+		right: 0px;
+		bottom: 0px;
+	}
+	.gridU li.border{
+		border-right: 1px solid #b6b6b6;
+		border-left: 1px solid #b6b6b6;
+	}
+	.gridU li.border_b{
+		border-top: 1px solid #b6b6b6;
+		border-bottom: 1px solid #b6b6b6;
+	}
+	.gridU li.xuan{
+		background: url("img/xuan.png") 0 0 no-repeat;
+    	background-size: 100% 100%;
+	}
+	.gridU li.xuan img{
+		display: block;
+	}
+	.gridU li.buKe{
+		background: #cacaca;
+	}
+	.gridU li.bai{
+		background: #fff;
+	}
+	.gridU li.bai img,.gridU li.buKe img{
+		display: none;
+	}
+</style>
+<body>
+	<div class="box">
+		<!--导航-->
+		<div class="nav">
+			<div class="navL">
+				<a href="#" onClick="TimeClick();">
+					<img src="img/fanhui.png" class="fanhui" />
+				</a>
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<!---年检列表---->
+		<div class="con conS">
+			<div style="width:100%;height:12px;background:#f6f6f6;"></div>
+			<div class="Time">
+				<div class="Years">
+					<span>
+						<span id="ye">2011</span>
+						年
+					</span>
+					<span clas="month">
+						<span class="mo">17</span>
+						月
+					</span>
+				</div>
+				<div class="dayC">
+					<div class="day">
+						<ul>
+							<li class="Hong">
+								<span>今天</span><br>
+								<span class="shuJ">
+									<span class="year">2015</span>
+									<span class="mo">10</span>
+									<span>/</span>
+									<span class="da">28</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div>
+				<ul class="gridU">
+					<li class="xuan">
+						07:00-09:00
+						<img src="img/xuan.jpg"/>
+					</li>
+					<li class="border">
+						09:00-11:00
+						<img src="img/xuan.jpg"/>
+					</li>
+					<li>
+						11:00-13:00
+						<img src="img/xuan.jpg"/>
+					</li>
+					<li class="border_b">
+						13:00-15:00
+						<img src="img/xuan.jpg"/>
+					</li>
+					<li class="border border_b buKe">
+						15:00-17:00
+						<img src="img/xuan.jpg"/>
+					</li>
+					<li class="border_b buKe">
+						17:00-19:00
+						<img src="img/xuan.jpg"/>
+					</li>
+					<li>
+						19:00-21:00
+						<img src="img/xuan.jpg"/>
+					</li>
+					<li class="border bai">
+						<img src="img/xuan.jpg"/>
+					</li>
+					<li class="bai">
+						<img src="img/xuan.jpg"/>
+					</li>
+				</ul>
+				<div class="zhuangTai">
+					<img src="img/YuYue.jpg" />
+					代表可预约时间<br>
+					<img src="img/BuYuYue.jpg"/>
+					代表不可预约时间
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="conM" style="display: none;">
+		<span class="conM1">1111</span>-<span class="conM2">2222</span>-<span class="conM3">3333</span>
+		&nbsp;
+		<span class="conM4">4444</span>
+	</div>
+	<!-- 下拉框样式控制 -->
+	<script type="text/javascript">
+		
+		
+		function TimeClick(){
+			$("#conM .conM1").text($(".Time .day ul li.Hong .year").text());
+			$("#conM .conM2").text($(".Time .day ul li.Hong .mo").text());
+			$("#conM .conM3").text($(".Time .day ul li.Hong .da").text());
+			$("#conM .conM4").text($(".gridU li.xuan").text());
+
+			var Scon = $("#conM").text();
+			$('.dingDanTi ul li#time .right', window.parent.document).text(Scon);
+			$('#ii', window.parent.document).fadeOut();
+		}
+		$(function (){
+			$(".gridU li").click(function (){
+				$(this).addClass("xuan").siblings().removeClass("xuan");
+			});
+
+
+			/*var myDate  = new Date();//创建时期对象
+			var year = myDate .getFullYear();//获取当前年份
+			var month = myDate .getMonth()+1;//获取当前月份
+			var date = myDate .getDate();//获取当前日期
+			var day = myDate .getDay();//获取当前周
+			
+			$("#ye").text(year);//动态设置当前年份
+			$(".mo").text(month);//动态设置当前月份
+			$(".da").text(date);//动态设置当前日期*/
+			//for循环里面的addDate(date,i)
+
+			function addDate(days){
+			   var d=new Date();
+			   d.setDate(d.getDate()+days);
+			   var m=d.getMonth()+1;
+			   return d.getFullYear()+'-'+m+'-'+d.getDate();
+			 }
+			for (var i=0; i<9; i++) {
+				console.log(addDate(i));	
+				var month = addDate(i).getMonth();//获取当前月份
+				console.log(month);
+				/*var 
+				$(".Time .day ul").append(
+					'<li>'+``
+					'   <span class="year">2015</span>'+
+					'	<span>'+week+'</span><br>'+
+					'	<span>'+
+					'		<span class="mo">'+month+'</span>'+
+					'		<span>/</span>'+
+					'		<span class="da">'+dateJ+'</span>'+
+					'	</span>'+
+					'</li>'
+				);*/
+			}
+
+		     
+			//var i=6;
+			/*for (var i = 1; i < 6; i++) {
+				var dateJ = date+i;
+				var dayZ = day+i;
+
+
+				var week; 
+				if(dayZ==1){
+					week="周一";
+				}else if(dayZ==2){
+					week="周二";
+				}else if(dayZ==3){
+					week="周三";
+				}else if(dayZ==4){
+					week="周四";
+				}else if(dayZ==5){
+					week="周五";
+				}else if(dayZ==6){
+					week="周六";
+				}else if(dayZ==7){
+					week="周日";
+				}else if(dayZ>7){
+					dayZ=1;
+				}
+				
+				
+				$(".Time .day ul").append(
+					'<li>'+
+					'   <span class="year">2015</span>'+
+					'	<span>'+week+'</span><br>'+
+					'	<span>'+
+					'		<span class="mo">'+month+'</span>'+
+					'		<span>/</span>'+
+					'		<span class="da">'+dateJ+'</span>'+
+					'	</span>'+
+					'</li>'
+				);
+			};*/
+		});
+		
+		$(".Time .day ul").on("click","li",function() {
+		     $(this).addClass("Hong").siblings().removeClass("Hong");
+		});
+	</script>
+</body>
+</html>

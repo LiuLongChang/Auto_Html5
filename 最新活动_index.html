@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+<title>最新活动_index</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<style type="text/css">
+	.con ul.yuanW{
+		width: 100%;
+
+	}
+	.con ul.yuanW li{
+		border-bottom: 1px solid #c4c4c4;
+		overflow: hidden;
+		padding: 16px 0px 16px 0px;
+	}
+	.con ul.yuanW li img{
+		width: 20%;
+		float: left;
+		margin: 12px 10px 0px 10px;
+	}
+	.con ul.yuanW li>div.xinxi{
+		float: left;
+		width: 70%;
+	}
+	.con ul.yuanW li>div>div{
+		width: 100%;
+		overflow: hidden;
+		line-height: 30px;
+	}
+	.con ul.yuanW li div .name{
+		font-size: 16px;
+		float: left;
+		font-weight: bold;
+	}
+	.con ul.yuanW li div .xin{
+		color: #f0871a;
+		float: right;
+		background: url("img/xin.png") 42px 7px no-repeat;
+		background-size: 15px 15px;
+		padding-right: 40px;
+		font-size: 16px;
+		margin-right: 5px;
+	}
+	.con ul.yuanW li div .text{
+		font-size: 12px;
+    	line-height: 18px;
+	}
+	.con button{
+		position: fixed;
+		width: 100%;
+		background: #f0871a;
+		color: #fff;
+		font-size: 16px;
+		line-height: 48px;
+		bottom: 0px;
+		display: block;
+		border: none;
+		font-family: Arial,"Microsoft Yahei";
+	}
+	.con{
+		padding-bottom: 55px;
+	}
+	.box>div.nav .navR {
+	    width: 56px;
+	    line-height: 32px;
+	    font-size: 14px;
+	}
+	.box>div.nav .navR a{
+	    color: #f0871a;
+	}
+</style>
+<body>
+	<div class="box" style="padding:0px;height:100px;">
+		<!--导航-->
+		<div class="nav">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<a href="">活动细则</a>
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<!---年检列表---->
+		<div class="con">
+			<div class="nianjianB">
+				<img src="img/nianjian.jpg" />
+			</div>
+			<ul class="yuanW">
+				<li>
+					<img src="img/zhanweiD.png" />
+					<div class="xinxi">
+						<div>
+							<span class="name">Danny</span>
+							<span class="xin">10</span>
+						</div>
+						<div class="text">
+							愿望内容被卡你看你看就开了房贷款了女款两年了卡年费可能不分开了难看了牛逼了空间大了来看
+						</div>
+					</div>
+				</li>
+				<li>
+					<img src="img/zhanweiD.png" />
+					<div class="xinxi">
+						<div>
+							<span class="name">Danny</span>
+							<span class="xin">10</span>
+						</div>
+						<div class="text">
+							愿望内容被卡你看你看就开了房贷款了女款两年了卡年费可能不分开了难看了牛逼了空间大了来看
+						</div>
+					</div>
+				</li>
+			</ul>
+			<button>我要许愿</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function (){
+			/***在线客服显示隐藏动态控制***/
+			$("#kefu").click(function (event){
+				$("#zaiX").fadeIn();
+				event.stopPropagation();
+			});
+			$(document).click(function (){
+				$("#zaiX").fadeOut();
+			});
+		});
+		
+	</script>
+</body>
+</html>

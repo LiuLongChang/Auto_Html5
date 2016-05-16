@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<title>最新活动_个人信息</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<style type="text/css">
+
+	.box>div.nav .navR {
+	    width: 56px;
+	    line-height: 32px;
+	    font-size: 14px;
+	}
+	.box>div.nav .navR a{
+	    color: #f0871a;
+	}
+	.name_phone{
+		width: 92%;
+		margin: 20px auto;
+		border: 1px solid #c6c6c6;
+	}
+	.name_phone div{
+		padding-left: 16px;
+		line-height: 42px;
+		border-top: 1px solid #c6c6c6;
+		font-weight: bold;
+	}
+	.name_phone div span{
+		display: inline-block;
+		width: 62px;
+		font-size: 14px;
+	}
+	.name_phone div input{
+		border: none;
+		font-family: Arial,"Microsoft Yahei";
+	}
+	.name_phone div textarea{
+		width: 98%;
+		border: none;
+		min-height: 90px;
+		font-family: Arial,"Microsoft Yahei";
+	}
+	
+	.name_phone div.textarea{
+		position: relative;
+		line-height: 20px;
+	}
+	.name_phone div.textarea span{
+		margin-top: 10px;
+	}
+	.con .xbot{
+		width: 100%;
+		position: fixed;
+		bottom: 20px;
+		margin: 0 auto;
+		border: none;
+		text-align: center;
+	}
+	.name_phone div.textarea .length{
+		position: absolute;
+		bottom: 0px;
+		right: 6px;
+		font-size: 14px;
+		color: #f0871a;
+		border: none;
+		line-height: 30px;
+	}
+	.name_phone div.textarea .length span{
+		width: 28px;
+	}
+	.name_phone div.textarea .length .Dong{
+		color: #989898;
+		text-align: right;
+	}
+	.con button{
+		width: 92%;
+		line-height: 48px;
+		border-radius: 6px;
+		background: #f0871a;
+		color: #fff;
+		text-align: center;
+		border: none;
+		font-family: Arial,"Microsoft Yahei";
+		font-size: 16px;
+	}
+	.name_phone textarea::-webkit-input-placeholder{
+		font-family: Arial,"Microsoft Yahei";
+　　}
+
+</style>
+<body>
+	<div class="box" style="padding:0px;height:100px;">
+		<!--导航-->
+		<div class="nav">
+			<div class="navL">
+				<img src="img/fanhui.png" class="fanhui" />
+			</div>
+			<div class="navR">
+				<a href="">活动细则</a>
+			</div>
+			<div class="navC">
+				<img src="img/nLog.png" />
+			</div>
+		</div>
+		<!---年检列表---->
+		<div class="con">
+			<div class="nianjianB">
+				<img src="img/nianjian.jpg" />
+			</div>
+			<div class="name_phone">
+				<div style="border-top: none;">
+					<span>
+						昵称：
+					</span>
+					<input type="text" />
+				</div>
+				<div>
+					<span>
+						手机号：
+					</span>
+					<input type="text" />
+				</div>
+				<div class="textarea">
+					<span>
+						我的愿望:
+					</span><br>
+					<textarea placeholder="请输入我的愿望内容" onkeydown="call_back()"></textarea>
+					<div class="length">
+						<span class="Dong">0</span>
+						<span>/200</span>
+					</div>
+				</div>
+			</div>
+			<div class="xbot">
+				<button>提交</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function call_back(){
+			var DongL =  $(".name_phone div textarea").val().length;
+			$(".name_phone div.textarea .length .Dong").text(DongL);
+		};
+		
+	</script>
+</body>
+</html>
